@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "ONE-Mobile-Title";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff")
+      format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+/*-----------------------------------------------------------
+                   footer
+-------------------------------------------------------------*/
+footer {
+    width: 100%;
+    height: 150px;
+    top: 145%;
+    position: relative;
+    font-family: "ONE-Mobile-Title";
+  }
+  footer .inner10 {
+    top: 30px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  footer .f_cont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+  }
+  .f_wrap {
+    position: absolute;
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 70%;
+    bottom: 0;
+    border-top: 1px solid black;
+    box-sizing: border-box;
+    padding-top: 30px;
+  }
+  .f_wrap .f_logo {
+    width: 15%;
+    height: 70%;
+    position: relative;
+  }
+  .f_wrap .f_logo a {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+  }
+  .f_wrap .f_logo span {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background: url(/img/icon/f_logo.svg) no-repeat top center;
+    background-size: contain;
+    z-index: 2;
+  }
+  .f_wrap .f_menu {
+    width: 50%;
+    height: 70%;
+    position: relative;
+    display: flex;
+    left: 80px;
+    line-height: 36px;
+  }
+  .f_wrap .f_menu ul.toggle_list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+  }
+  .f_wrap .f_menu ul.toggle_list .list1 {
+    width: 35%;
+    height: 100%;
+    cursor: pointer;
+  }
+  .f_wrap .f_menu ul.toggle_list .list1:nth-child(2) {
+    margin-right: 50px;
+  }
+  .f_wrap .f_menu ul.toggle_list .list1 p {
+    font-size: 23px;
+  }
+  .f_wrap .f_menu ul.toggle_list .list1 ul {
+    width: 100%;
+    top: -20px;
+    position: relative;
+    font-family: "ONE-Mobile-Title";
+  }
+  .f_wrap .pos_right {
+    width: 30%;
+    height: 100%;
+    right: 0;
+    text-align: right;
+    line-height: 35px;
+    position: absolute;
+  }
+  dd {
+    width: 70%;
+    position: relative;
+  }
+  dt {
+    display: inline-block;
+    color: #666;
+    position: absolute;
+    left: 70;
+    font-size: 13px;
+    margin-right: 50px;
+  }
+  dd {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    color: black;
+    margin-left: 50px;
+  }
+  dd > span {
+    display: block;
+    font-size: 12px;
+    color: #797979;
+    line-height: 10px;
+    margin-bottom: 60px;
+  }
+  .f_wrap .pos_right ul {
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: end;
+  }
+  .f_wrap .pos_right ul li {
+    width: 24.5%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .f_wrap .pos_right ul li a {
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+  }
+  .f_wrap .pos_right .wa_mark {
+    width: 100%;
+    height: 40px;
+    position: relative;
+  }
+  .pos_right .wa_mark > ul li:nth-child(1) > a {
+    background: url(/img/icon/iso_mark.png) no-repeat center center;
+    background-size: contain;
+  }
+  .pos_right .wa_mark > ul li:nth-child(2) > a {
+    background: url(/img/icon/wa_mark.png) no-repeat center center;
+    background-size: contain;
+  }
+  .pos_right .wa_mark > ul li:nth-child(3) > a {
+    background: url(/img/icon/ffsb_mark.png) no-repeat center center;
+    background-size: contain;
+  }
+  .copyright {
+    color: #797979;
+    font-size: 10px;
+    position: absolute;
+    right: 0;
+  }

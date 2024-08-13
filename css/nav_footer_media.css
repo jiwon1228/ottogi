@@ -1,0 +1,720 @@
+/*******************미디어쿼리 시작*****************/
+/**************미디어쿼리 max-width 1600px*********/
+/*************************************************/
+
+@media (max-width: 1600px) {
+  /* nav바 스타일 */
+  #nav ul.navbar {
+    width: 60%;
+    height: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+  }
+
+  .btn_menu {
+    width: 44px;
+    height: 100px;
+    position: absolute;
+    text-indent: -9999px;
+    background: url(/img/icon/btn_menu_w.svg) no-repeat left top;
+    background-position: 10px;
+  }
+
+  /*햄버거버튼*/
+  .btn_menu {
+    width: 44px;
+    height: 100px;
+    left: 25px;
+    position: absolute;
+    text-indent: -9999px;
+    background: url(/img/icon/btn_menu_w.svg) no-repeat left top;
+    background-position: 10px;
+  }
+
+  .btn_menu_b {
+    display: none;
+    width: 44px;
+    height: 100px;
+    left: 37px;
+    background: url(/img/icon/btn_menu.svg) no-repeat left top;
+    z-index: 4;
+  }
+
+  /*lang_dropdown*/
+  .lang {
+    width: 60px;
+    height: 100px;
+    position: absolute;
+    display: block;
+    right: 290px;
+  }
+
+  .util_pc {
+    width: 230px;
+    height: 100px;
+    position: absolute;
+    right: 60px;
+    top: 28%;
+  }
+  .lang {
+    width: 60px;
+    height: 100px;
+    position: absolute;
+    display: block;
+    right: 270px;
+    z-index: 5;
+  }
+  .button{
+    display: none;
+  }
+}
+
+/*************************************************/
+/**************미디어쿼리 max-width 1450px*********/
+/*************************************************/
+/*-----------------------------------------------------------
+                    footer
+        -------------------------------------------------------------*/
+@media (max-width: 1450px) {
+  /* nav바 스타일 */
+  #nav ul.navbar {
+    width: 55%;
+    height: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    margin-right: 150px;
+  }
+  .menu_item{
+    left: 50px;
+    margin: 10px;
+  }
+
+  /*햄버거버튼*/
+  .btn_menu {
+    width: 44px;
+    height: 100px;
+    left: 25px;
+    position: absolute;
+    text-indent: -9999px;
+    background: url(/img/icon/btn_menu_w.svg) no-repeat left top;
+    background-position: 10px;
+  }
+
+  .btn_menu_b {
+    display: none;
+    width: 44px;
+    height: 100px;
+    left: 35px;
+    background: url(/img/icon/btn_menu.svg) no-repeat left top;
+    z-index: 4;
+  }
+
+  /*lang_dropdown*/
+  .lang {
+    width: 60px;
+    height: 100px;
+    position: absolute;
+    display: block;
+    right: 270px;
+  }
+
+  .util_pc {
+    width: 225px;
+    height: 100px;
+    position: absolute;
+    right: 40px;
+    top: 27%;
+  }
+  .lang {
+    width: 60px;
+    height: 100px;
+    position: absolute;
+    display: block;
+    right: 250px;
+    z-index: 5;
+  }
+  /*footer 중앙 메뉴*/
+  .f_wrap .f_menu {
+    width: 46%;
+    height: 70%;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    left: 80px;
+    line-height: 34px;
+  }
+  .f_wrap .f_menu ul.toggle_list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+  }
+  .f_wrap .f_menu ul.toggle_list .list1 {
+    width: 36%;
+    height: 100%;
+    cursor: pointer;
+  }
+  .f_wrap .f_menu ul.toggle_list .list1:nth-child(2) {
+    margin-right: 20px;
+  }
+  .f_wrap .f_menu ul.toggle_list .list1 p {
+    font-size: 20px;
+    margin: 0 auto;
+  }
+  .f_wrap .f_menu ul.toggle_list .list1 ul {
+    width: 100%;
+    top: -20px;
+    position: relative;
+  }
+  .f_wrap .f_menu ul.toggle_list .list1 ul li {
+    font-size: 14px;
+    display: flex;
+    white-space: nowrap; /* 텍스트가 줄바꿈 없이 한 줄로 유지됩니다 */
+  }
+  /*오른쪽 고객상담실*/
+  .f_wrap .pos_right {
+    width: 40%;
+    height: 100%;
+    right: 0;
+    text-align: right;
+    line-height: 35px;
+    position: absolute;
+  }
+  /*footer 상담실 이미지*/
+  dd {
+    width: 70%;
+    position: relative;
+  }
+  dt {
+    display: inline-block;
+    color: #666;
+    position: absolute;
+    left: 70;
+    font-size: 13px;
+    margin-right: 50px;
+  }
+  dd {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    color: black;
+    margin-left: 50px;
+  }
+  dd > span {
+    display: block;
+    font-size: 12px;
+    color: #797979;
+    line-height: 10px;
+    margin-bottom: 60px;
+  }
+  /*로고*/
+  .f_wrap .f_logo {
+    width: 10%;
+    height: 45%;
+    position: relative;
+  }
+  .f_wrap .f_logo a {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+  }
+  .f_wrap .f_logo span {
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    background: url(/img/icon/f_logo.svg) no-repeat top center;
+    background-size: contain;
+    z-index: 2;
+  }
+}
+
+/**************미디어쿼리 max-width 1240px*********/
+/*************************************************/
+
+@media (max-width: 1240px) {
+  .inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* nav바 스타일 */
+  #nav ul.navbar {
+    width: 55%;
+    height: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  /*nav 메인 메뉴*/
+  #nav .logo {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    background: url(/img/icon/logo_wh.svg) no-repeat center center;
+    background-size: 50px;
+    text-indent: -9999px;
+    position: relative;
+    top: 15px;
+    left: 45px;
+  }
+
+  #nav .menu_item {
+    width: 15%;
+    height: 100%;
+    position: relative;
+    margin-left: 10px;
+    right: -100px;
+    /*border: 1px solid aqua;*/
+  }
+
+  #nav .menu_item a {
+    width: 100px;
+    height: 100px;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    /* 수평 중앙 정렬 */
+    align-items: center;
+    /* 수직 중앙 정렬 */
+  }
+
+  /*햄버거버튼*/
+  .btn_menu {
+    width: 44px;
+    height: 100px;
+    left: 5px;
+    position: absolute;
+    text-indent: -9999px;
+    background: url(/img/icon/btn_menu_w.svg) no-repeat left top;
+    background-size: 30px;
+    background-position: 10px;
+  }
+
+  .btn_menu_b {
+    display: none;
+    width: 44px;
+    height: 100px;
+    left: 17px;
+    background: url(/img/icon/btn_menu.svg) no-repeat left top;
+    background-size: 25px;
+    z-index: 4;
+  }
+
+  /*depth*/
+  .lang {
+    width: 60px;
+    height: 100px;
+    position: absolute;
+    display: block;
+    right: 178px;
+    z-index: 5;
+  }
+
+  .lang a {
+    color: white;
+    font-size: 0.9em;
+    text-decoration: none;
+  }
+
+  /*nav 메인 메뉴*/
+  #nav > .menu_item {
+    width: 15%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    right: -110px;
+  }
+
+  /*왼쪽 nav*/
+  .util_pc {
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    right: 0px;
+    top: 29%;
+  }
+
+  .util_pc ul {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 13px;
+    right: 40px;
+  }
+
+  .util_pc ul li {
+    float: left;
+    flex-wrap: nowrap;
+    margin-left: 1px;
+  }
+
+  .util_pc ul li.search_btn {
+    width: 38px;
+    height: 30px;
+    background: url(/img/icon/gnb_search.svg) no-repeat center center;
+    background-size: 25px;
+    text-indent: -9999px;
+    position: relative;
+    right: 100px;
+    cursor: pointer;
+  }
+
+  .util_pc ul li.chat {
+    width: 40px;
+    height: 30px;
+    background: url(/img/icon/gnb_chatbot.svg) no-repeat center center;
+    background-size: 25px;
+    text-indent: -9999px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .util_pc ul li.ottogimall {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background: url(/img/icon/gnb_mall.svg) no-repeat center center;
+    background-size: 65px;
+    background-position: 8px;
+    text-indent: -9999px;
+    position: relative;
+    cursor: pointer;
+    background-color: yellow;
+  }
+
+  /*sub_menu_item*/
+  ul.sub_menu {
+    width: 200px;
+    height: 380px;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+  }
+
+  ul.sub_menu li {
+    width: 100%;
+    height: 20px;
+  }
+
+  ul.sub_menu li a {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    font-size: 13px !important;
+    color: #666 !important;
+    line-height: 17px;
+  }
+
+  /*sub menu 줄 맞추기*/
+  .menu_item:nth-child(4) .sub_menu li,
+  .menu_item:nth-child(5) .sub_menu li,
+  .menu_item:nth-child(6) .sub_menu li,
+  .menu_item:nth-child(7) .sub_menu li {
+    right: 0px;
+    left: 0;
+  }
+  div.carousel-item:nth-child(4) > .slideTextbox {
+    top: 230px;
+    z-index: 1;
+  }
+}
+/**************미디어쿼리 max-width 1020px*********/
+/*************************************************/
+
+/*-----------------------------------------------------------
+                   footer
+-------------------------------------------------------------*/
+@media (max-width: 1020px) {
+  /*메인로고 모바일*/
+  #nav .logo {
+    background-size: 40px;
+    left: 10px;
+    top: 3px;
+  }
+
+  ul.navbar li {
+    display: none;
+  }
+
+  .util_pc {
+    display: none;
+  }
+
+  .lang {
+    display: none;
+  }
+  .mo_lang {
+    right: 5px;
+    top: 8px;
+    background-position: 10px;
+    color: white;
+    display: block;
+    z-index: 7;
+  }
+  .dropLang2 {
+    width: 70px;
+    height: 88px;
+    overflow: hidden;
+    position: relative;
+    display: none;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    left: -21px;
+    top: 5px;
+    z-index: 6;
+  }
+
+  .mo_lang ul {
+    width: 50px;
+    height: 80%;
+    position: relative;
+    margin: 20px 25px;
+  }
+
+  .mo_lang ul a {
+    color: black;
+    font-size: 0.9em;
+  }
+
+  .mo_lang ul li {
+    width: 80%;
+  }
+
+  .mo_lang a {
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+  }
+
+  /*햄버거버튼*/
+  .btn_dropdown {
+    display: block;
+    z-index: 5;
+    left: 60px;
+  }
+  .dropLang a {
+    margin-left: 13px;
+  }
+  footer {
+    width: 100%;
+    height: 100px;
+    top: 0px;
+    position: relative;
+  }
+  footer .inner10 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  footer .f_cont {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    position: relativ;
+    justify-content: center;
+  }
+  .f_wrap {
+    position: relative;
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100%;
+    bottom: 0;
+    border-top: none;
+    box-sizing: border-box;
+    padding-top: 30px;
+  }
+  /*로고*/
+  .f_wrap .f_logo {
+    width: 100%;
+    height: 70%;
+    position: relative;
+  }
+  .f_wrap .f_logo a {
+    width: 90%;
+    height: 90%;
+    position: relative;
+  }
+  .f_wrap .f_logo span {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    background: url(/img/icon/f_logo.svg) no-repeat top center;
+    background-size: contain;
+    display: none;
+    z-index: 2;
+  }
+  /*footer 중앙 메뉴*/
+  .f_wrap .f_menu {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    display: block;
+    left: 0px;
+    line-height: 36px;
+  }
+  .f_wrap .f_menu ul.toggle_list {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+  }
+  .f_wrap .f_menu ul.toggle_list .list1 button {
+    width: 24px;
+    height: 24px;
+    background: url(/img/icon/btn_list_02.svg) no-repeat center center;
+    background-size: contain;
+    display: inline;
+    right: 0;
+    margin-top: 20px;
+    position: absolute;
+  }
+  .f_wrap .f_menu ul.toggle_list .list1 {
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden; /* 자식 요소가 보이지 않을 때 공간을 차지하지 않도록 설정 */
+    transition: height 0.3s ease; /* height 속성 변화에 애니메이션 추가 */
+  }
+  .f_wrap .f_menu ul.toggle_list .list1:nth-child(1) {
+    height: auto;
+  }
+  .f_wrap .f_menu ul.toggle_list .list1:nth-child(2) {
+    height: auto;
+  }
+  .f_wrap .f_menu ul.toggle_list .list1:nth-child(3) {
+    height: auto;
+  }
+  .f_wrap .f_menu ul.toggle_list .list1 p {
+    font-size: 18px;
+    display: inline-block;
+    margin: 0; /* 공백을 없애기 위해 margin을 0으로 설정 */
+    margin-top: 20px;
+  }
+  .f_wrap .f_menu ul.toggle_list .list1 ul {
+    width: 100%;
+    top: 10px;
+    margin: 0; /* 공백을 없애기 위해 margin을 0으로 설정 */
+    padding: 0; /* 공백을 없애기 위해 padding을 0으로 설정 */
+    display: block; /* 기본적으로 ul 요소를 숨김 */
+  }
+  .f_wrap .f_menu ul.toggle_list .list1.active ul {
+    display: block; /* 활성화된 상태에서 ul 요소를 표시 */
+  }
+
+  /*footer 오른쪽 메뉴 이미지*/
+  .f_wrap .pos_right {
+    width: 100%;
+    height: 20%;
+    left: 0;
+    top: 0;
+    line-height: 26px;
+    bottom: 0;
+    position: relative;
+  }
+  /*footer 상담실 이미지*/
+  .f_num {
+    width: 100%;
+    height: 30%;
+    position: relative;
+  }
+  dl:nth-of-type(1) {
+    width: 40%;
+    position: relative;
+    display: inline;
+    left: 0;
+    float: left;
+  }
+  dl:nth-of-type(2) {
+    width: 60%;
+    position: relative;
+    display: inline;
+    left: 0;
+    float: left;
+  }
+  dt {
+    display: block;
+    color: #666;
+    position: relative;
+    left: 0px;
+    font-size: 15px;
+    text-align: left;
+    margin: 0;
+  }
+  dd {
+    display: block;
+    position: relative;
+    margin: 0;
+    font-size: 20px;
+    text-align: left;
+    color: black;
+    white-space: nowrap;
+  }
+  dd > span {
+    display: block;
+    font-size: 12px;
+    color: #797979;
+    line-height: 10px;
+    margin-bottom: 0px;
+  }
+  /*마크 이미지*/
+  .f_wrap .pos_right ul {
+    width: 40%;
+    height: 40px;
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+    justify-content: start;
+    position: relative;
+  }
+  .f_wrap .pos_right ul li {
+    width: 30%;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .f_wrap .pos_right ul li a {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+  }
+  .f_wrap .pos_right .wa_mark {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    bottom: 0px;
+  }
+  .pos_right .wa_mark > ul li:nth-child(1) > a {
+    background: url(/img/icon/iso_mark.png) no-repeat center center;
+    background-size: contain;
+  }
+
+  .pos_right .wa_mark > ul li:nth-child(2) > a {
+    background: url(/img/icon/wa_mark.png) no-repeat center center;
+    background-size: contain;
+  }
+
+  .pos_right .wa_mark > ul li:nth-child(3) > a {
+    background: url(/img/icon/ffsb_mark.png) no-repeat center center;
+    background-size: contain;
+  }
+  .copyright {
+    color: #797979;
+    font-size: 14px;
+    position: relative;
+    right: auto;
+    left: 0;
+    line-height: 50px;
+    bottom: 0px;
+  }
+}

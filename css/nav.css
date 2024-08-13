@@ -1,0 +1,571 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "ONE-Mobile-Title";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff")
+    format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+ul li,
+ol li {
+  list-style: none;
+}
+
+html{
+  width: 100%;
+  position: absolute;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  overflow-x: hidden;
+}
+
+#wraper,
+#header {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+
+/*-----------------------------------------------------------
+                   section#main 첫번째 컨텐츠
+    -------------------------------------------------------------*/
+#wrapper section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* .border {
+            border: 1px solid rgb(208, 255, 0);
+          }*/
+.inner {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  z-index: 2;
+  font-family: "ONE-Mobile-Title";
+}
+
+/*메인 로고*/
+#nav .logo {
+  width: 60px;
+  height: 60px;
+  display: block;
+  background: url(/img/icon/logo_wh.svg) no-repeat center center;
+  background-size: 60px;
+  text-indent: -9999px;
+  position: relative;
+  top: 15px;
+  left: 45px;
+  z-index: 2;
+}
+
+/* nav바 스타일 */
+#nav ul.navbar {
+  width: 70%;
+  height: 100px;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  /*  overflow: hidden;*/
+  white-space: nowrap;
+
+}
+
+/*nav 메인 메뉴*/
+#nav .menu_item {
+  width: 15%;
+  height: 100%;
+  position: relative;
+  right: -160px;
+  z-index: 1;
+  cursor: pointer;
+  /*border: 1px solid aqua;*/
+}
+
+#nav .menu_item > li {
+  position: absolute;
+}
+
+#nav .menu_item > a {
+  width: 145px;
+  height: 100px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  z-index: 1;
+}
+
+#nav .menu_item > a:hover {
+  color: black;
+}
+
+.font_shadow {
+  text-shadow: 0px 0px 3px rgb(44, 44, 44);
+}
+
+#nav .menu_item span {
+  width: 100px;
+  height: 26px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/*호버시 보이게*/
+.show-before::before {
+  content: "";
+  background-color: white;
+  width: 100%;
+  height: 400px;
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+
+/*햄버거버튼*/
+.btn_menu {
+  width: 44px;
+  height: 100px;
+  left: 25px;
+  top: 1px;
+  position: absolute;
+  text-indent: -9999px;
+  background: url(/img/icon/btn_menu_w.svg) no-repeat left top;
+  background-position: 10px;
+}
+
+.btn_menu_b {
+  width: 44px;
+  height: 100px;
+  left: 37px;
+  top: 38px;
+  position: absolute;
+  display: none;
+  text-indent: -9999px;
+  background-position: 10px;
+  text-shadow: 0px 0px 4px rgb(44, 44, 44);
+  background: url(/img/icon/btn_menu.svg) no-repeat left top;
+}
+
+#nav .menu_item span.sitemap {
+  position: absolute;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+/*sub_menu_item*/
+ul.sub_menu {
+  width: 140px;
+  height: 380px;
+  position: absolute;
+  left: 35px;
+  top: 75px;
+  display: none;
+}
+
+ul.sub_menu li {
+  width: 97%;
+  position: relative;
+  height: auto;
+}
+
+ul.sub_menu li a {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 16px !important;
+  color: #666 !important;
+  line-height: 22px;
+}
+
+/*sub menu 줄 맞추기*/
+.menu_item:nth-child(4) .sub_menu li,
+.menu_item:nth-child(5) .sub_menu li,
+.menu_item:nth-child(7) .sub_menu li {
+  right: 6px;
+}
+
+.menu_item:nth-child(6) .sub_menu li {
+  left: 4px;
+}
+
+/*nav 왼쪽 PC버전 스타일*/
+
+.util_pc {
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  right: 60px;
+  top: 27px;
+  z-index: 3;
+}
+
+.util_pc ul {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 15px;
+}
+
+.util_pc ul li {
+  float: left;
+  flex-wrap: nowrap;
+  margin-left: 15px;
+  left: 25px;
+}
+
+.util_pc ul li.search_btn {
+  width: 35px;
+  height: 30px;
+  background: url(/img/icon/gnb_search.svg) no-repeat center center;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+
+.util_pc ul li.chat {
+  width: 40px;
+  height: 30px;
+  background: url(/img/icon/gnb_chatbot.svg) no-repeat center center;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+
+.util_pc ul li.ottogimall {
+  width: 130px;
+  height: 30px;
+  border-radius: 10px;
+  background: url(/img/icon/gnb_mall.svg) no-repeat center center;
+  background-position: 8px;
+  text-indent: -9999px;
+  cursor: pointer;
+  background-color: yellow;
+}
+
+.util_pc ul li.ottogimall::after {
+  content: "";
+  width: 25px;
+  height: 30px;
+  right: 10px;
+  top: 0px;
+  position: absolute;
+  display: block;
+  background: url(/img/icon/ico_arrow.svg) no-repeat center center;
+  background-size: 20px;
+}
+
+/* 모바일 infomation */
+.util_mo ul {
+  display: none;
+}
+
+/* 모바일 햄버거 버튼 */
+.btn_dropdown {
+  width: 44px;
+  height: 100px;
+  right: -50px;
+  top: 3px;
+  position: absolute;
+  background: url(/img/icon/btn_menu_w.svg) no-repeat left top;
+  display: none;
+  z-index: 16;
+}
+
+/* 모바일 햄버거 검정 버튼 */
+.btn_dropdown_b{
+  width: 44px;
+  height: 100px;
+  right: -51px;
+  top: 3px;
+  position: absolute;
+  background: url(/img/icon/btn_menu.svg) no-repeat left top;
+  z-index: 18;
+  display: block;
+}
+
+/*lang_dropdown*/
+.lang {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  display: block;
+  right: 255px;
+  top: 40px;
+}
+.mo_lang {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  display: none;
+  right: 255px;
+  top: 33px;
+}
+
+.dropLang {
+  width: 80px;
+  height: 88px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  left: -25px;
+  top: 5px;
+  z-index: 4;
+}
+
+.lang ul {
+  width: 50px;
+  height: 80%;
+  position: relative;
+  margin: 20px 25px;
+}
+
+.lang ul a {
+  color: black;
+}
+
+.lang ul li {
+  width: 80%;
+}
+
+.lang a {
+  color: white;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+.btn_lang_b {
+  width: 80px;
+  display: block;
+  position: relative;
+  padding-right: 25px;
+  font-size: 16px;
+  line-height: 14px;
+  z-index: 2;
+}
+
+.btn_lang_b::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 24px;
+  background: url(/img/icon/sel_lang.svg) no-repeat center center;
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+
+.btn_lang {
+  width: 60px;
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  padding-right: 20px;
+  font-size: 16px;
+  line-height: 34px;
+  z-index: 2;
+}
+
+/*dropdown 버튼*/
+.btn_lang::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 24px;
+  background: url(/img/icon/sel_lang_w.svg) no-repeat center center;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  z-index: 2;
+}
+
+.btn_lang:hover .dropLang {
+  display: block;
+}
+
+/*상단 검색창*/
+.modal {
+  width: 100%;
+  height: 170px;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 7;
+}
+
+.modal .content {
+  width: 100%;
+  height: 100%;
+  top: 5px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.S_logo {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  left: -20px;
+  background: url(/img/icon/logo_wh.svg) no-repeat center center;
+}
+
+.content > h2 {
+  position: relative;
+  left: -10px;
+  font-size: 1.1em;
+}
+
+.search-box {
+  width: 600px;
+  height: 70px;
+  background: #f3f3f3;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0px;
+
+  color: #797979;
+  font-size: 19px;
+  line-height: 30px;
+  width: 200px;
+}
+
+.close_btn {
+  width: 100px;
+  height: 100px;
+  background: url(/img/icon/btn_menu_close.svg) no-repeat center;
+  background-size: 40px;
+  cursor: pointer;
+  position: absolute;
+  text-indent: -9999px;
+  right: 0;
+  top: 0;
+  z-index: 80;
+}
+
+.S_btn {
+  float: right;
+  width: 80px;
+  height: 70px;
+  background: url(/img/icon/search_btn.png) no-repeat center;
+  background-size: 30px;
+  border-radius: 0 50px 50px 0;
+  background-color: #ffed00;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  position: relative;
+  left: 170px;
+  display: flex;
+  z-index: 2;
+}
+
+/*모바일메뉴********************/
+.mo_menu{
+  width: 100%;
+  height: 960px;
+  background-color: white;
+  overflow-y: hidden;
+  font-family: "ONE-Mobile-Title";
+
+}
+.mo_menu ul{
+  position: relative;
+  top: 120px;
+  left: 30px;
+  width: 90%;
+  height: 70%;
+}
+.mo_menu ul li{
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+
+
+}
+.mo_menu ul li a{
+  color: black;
+
+}
+.mo_menu ul li span{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 0;
+  background: url(/img/icon/a.png) no-repeat center center;
+  background-size: contain;
+}
+/*display: none처리*/
+.mo_menu,
+.main_mo_menu,
+.introduction2,
+.ESG2,
+.story2,
+.promotion2,
+.service2,
+.brand2
+{
+  display: none;
+}
+.menu-open {
+  display: block; 
+}
+/*모바일 상담*/
+.util_mo{
+  display: block;
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  right: 60px;
+  top: 21px;
+  z-index: 3;
+}
+.search_btn_mo{
+  display: block;
+}
+.back{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 28px;
+  top: 15px;
+  background: url(/img/icon/btn_back.svg) no-repeat center center;
+  background-size:contain;
+  z-index: 2;
+  display: none;
+}
+.search_btn_mo{
+  background: url(/img/icon/gnb_mall.svg);
+}
+.chat_mo{
+  position: relative;
+  bottom: 100px;
+}
